@@ -1,2 +1,7 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Store stats</h1>
+<div class="store-stats">
+<h3>Products</h3>
+<p>There are currently <%= @product.all.count %> products in the store</p>
+<h3>Categories</h3>
+<p>There are currently <%= @category.all.count %> categories in the store</p>
+</div>
