@@ -1,0 +1,8 @@
+<h1>About Page</h1>
+<p>We sell a lot of stuff</p>
+
+<p>We have <%= @category.all.count %> category in our store</p>
+<% @category.each do |item| %>
+  <li><%= item.name %></li>
+<% end %>
+<p>Please buy somthing :)</p>
