@@ -1,0 +1,27 @@
+main {
+
+  section.user-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .signup-template {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px;
+    border-color: rgba(0, 0, 0, 0.43);
+    border-style: solid;
+    padding: 40px;
+  }
+  .signup-template:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.447);
+  }
+
+  .signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,14 @@
+<section class="user-login">
+  <div class="login-template">
+    <h1>Login</h1>
+    
+    <%= form_tag '/login' do %>
+      
+      <div class="login">
+        <p>Email</p> <p><%= text_field_tag :email %></p>
+        <p>Password</p> <p><%= password_field_tag :password %></p>
+        <%= submit_tag "Submit" %>
+      </div>
+    <% end %>
+  </div>
+</section>

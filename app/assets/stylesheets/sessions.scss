@@ -1,0 +1,27 @@
+main {
+
+  section.user-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-template {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px;
+    border-color: rgba(0, 0, 0, 0.43);
+    border-style: solid;
+    padding: 40px;
+  }
+  .login-template:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.447);
+  }
+
+  .login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
