@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
+RSpec.feature "AddToCarts", type: :feature, js: true do
 
   #Setup
   before :each do 
@@ -16,17 +16,16 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
     end
   end
   
-  scenario "They see all products" do
-    # Act
+  scenario "Navigates to home product details page" do
+    # navigates to home page
     visit root_path
 
+    # finds the add link
+    page.first('.btn.btn-primary').click
 
-    # Debug / Saves PNG to tmp/capybara
-    save_screenshot "home.png"
+    # expect page to have updated "My Cart (0)" to => "My Cart (1)"
+    expect(page).to have_content "My Cart (1)"
 
-    # Verify
-    expect(page).to have_css 'article.product', count: 10 
-    # Makes sure there are 10 products being rendered with article with class name product
+    save_screenshot "updated_cart.png"
   end
-
 end

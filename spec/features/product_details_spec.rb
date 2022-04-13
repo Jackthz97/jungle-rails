@@ -27,7 +27,7 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
     sleep 2
 
     # saves screen shot under tmp/capybara
-    save_screenshot
+    save_screenshot "product_details.png"
 
     # test if pge have 
     expect(page).to have_css ('.products-show')
