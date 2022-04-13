@@ -20,7 +20,6 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
     # Act
     visit root_path
 
-
     # Debug / Saves PNG to tmp/capybara
     save_screenshot "home.png"
 
